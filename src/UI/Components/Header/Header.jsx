@@ -1,14 +1,17 @@
-import PATHS from "../../Constants/Path";
+import { PATHS, HackingToolset } from "../../Constants/Path";
 import { Link } from 'react-router-dom';
+import './Header.css';
+
 function Header() {
 
   return (
     <header className="header">
-        <h1>My Application Header</h1>
-         <Link to={PATHS.Home}>Home page</Link>
-         <br />
-         <Link to={PATHS.Profile}>Profile</Link>
-      
+        <div className="right">
+          
+        </div>
+        <div className="left">
+
+        </div>
     </header>
   );
 }

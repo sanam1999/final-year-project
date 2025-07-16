@@ -7,9 +7,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npm-run-all --parallel dev:react dev:electron",
-    "dev:react": "vite",
-    "dev:electron": "cross-env NODE_ENV=development electron .",
+    "chootiya": "npm-run-all --parallel land madarchod",
+    "land": "vite",
+    "madarchod": "cross-env NODE_ENV=development electron .",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -21,6 +21,7 @@
     "os-utils": "^0.0.14",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {

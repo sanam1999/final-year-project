@@ -1,24 +1,32 @@
-import './App.css';
-import PATHS from './Constants/Path';
-import { Routes, Route } from 'react-router-dom';
+import './index.css';
+import Body from './Body.jsx'
+import { BrowserRouter as Router } from "react-router-dom";
+import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+
+
+import './App.css';
+import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+
+
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
 
 function App() {
-    return (
-        <>
-       
-            <Header />
-            <Routes>
-             
-                <Route path={PATHS.Home} element={<Home />} />
-                <Route path={PATHS.Profile} element={<Profile />} />
-            </Routes>
-            <Footer />
-        </>
-    );
+  const [type, settype] = useState("Information Gathering");
+
+  return (
+
+     <Router>
+  <div className="app-layout">
+    <Header className="header" />
+    <Sidebar className="sidebar" type={type} settype={settype} />
+    <Body className="main" type={type}/>
+  </div>
+</Router>
+
+  );
 }
 
 export default App;
