@@ -3,15 +3,8 @@ import Body from './Body.jsx'
 import { BrowserRouter as Router } from "react-router-dom";
 import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
-
-
 import './App.css';
 import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-
-
-import Home from './Pages/Home/Home';
-import Profile from './Pages/Profile/Profile';
 
 function App() {
   const [type, settype] = useState("Information Gathering");

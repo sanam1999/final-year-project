@@ -5,7 +5,7 @@ import { HackingToolset } from "../../Constants/Path";
 function Home({ type }) {
   return (
     <div className="toolset-wrapper">
-      {/* {displayHackingToolset(type)} */}
+      {displayHackingToolset(type)}
     </div>
   );
 }

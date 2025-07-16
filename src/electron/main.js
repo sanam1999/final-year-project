@@ -12,7 +12,7 @@ app.on('ready', () => {
   });
 
   if (isDev()) {
-    mainWindow.loadURL('http://localhost:2000');
+    mainWindow.loadURL('http://localhost:2001');
   } else {
     mainWindow.loadFile(getUIPath());
   }
