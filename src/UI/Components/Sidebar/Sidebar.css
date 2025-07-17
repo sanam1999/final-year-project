@@ -1,0 +1,35 @@
+.Sidebar {
+  background-color: #000; /* Dark background */
+  width: 240px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Singelitem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.2s ease;
+ 
+}
+ .Singelitem:hover{
+    background-color: #413b62;
+  color: rgb(68, 142, 233);
+  }
+
+
+.Singelitem.active {
+  background-color: #484747;
+  color: rgb(68, 142, 233);
+}
+
+.Singelitem p {
+  margin: 0;
+}

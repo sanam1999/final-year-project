@@ -1,0 +1,71 @@
+.toolset-wrapper {
+  padding: 2rem;
+  background-color: #2d2d2d;
+  min-height: 100vh;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.tool-card {
+  width: 260px; /* Increased from 220px */
+  background-color: #404040;
+  border-radius: 12px;
+  padding: 1.5rem; /* Slightly more padding */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+
+.tool-card:hover {
+  transform: scale(1.03);
+}
+
+
+
+.tool-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.tool-icon {
+  font-size: 3.2rem; /* increased from 2.8rem */
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.tool-desc {
+  font-size: 0.95rem;
+  min-height: 70px;
+  margin-bottom: 1rem;
+}
+
+.tool-button {
+  background-color: #007acc;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.tool-button:hover {
+  background-color: #1496e2;
+}
